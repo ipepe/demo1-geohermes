@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ipepe/demo1-geohermes/issues"
   },
-  "homepage": "https://github.com/ipepe/demo1-geohermes#readme"
+  "homepage": "https://github.com/ipepe/demo1-geohermes#readme",
+  "dependencies": {
+    "harp": "^0.17.0"
+  }
 }

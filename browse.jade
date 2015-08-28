@@ -1,0 +1,100 @@
+div
+  #LeafletMapDiv(style="height: calc(100vh - 90px); width: 59vw; float:left;")
+  table.table.table-conensed(style="min-height: calc(100vh - 130px); width: 41vw;")
+    thead
+      tr
+        th Nazwa
+        th Odleglosc
+        th Adres
+        th Jezyki
+    tbody.hover-mouse-pointer(onclick="location='/details'")
+      tr
+        td Pałac Jabłonowskich
+        td 1200 m.
+        td Senatorska 14/16, Warszawa, Polska
+        td
+          img(src="/img/flags/pl.png")
+          img(src="/img/flags/en.png")
+          
+      tr
+        td Pałac Kultury i Nauki
+        td 495 m.
+        td Plac Defilad 1, Warszawa, Polska
+        td
+          img(src="/img/flags/pl.png")
+          img(src="/img/flags/en.png")
+          img(src="/img/flags/es.png")
+          img(src="/img/flags/fr.png")
+          img(src="/img/flags/de.png")
+        
+      tr
+        td Hotel Polonia
+        td 147 m.
+        td Aleje Jerozolimskie 45, Warszawa, Polska
+        td
+          img(src="/img/flags/pl.png")
+          img(src="/img/flags/en.png")
+          img(src="/img/flags/de.png")
+      tr
+        td Kolumna Zygmunta III Wazy
+        td 1955 m.
+        td Plac Zamkowy, Warszawa, Polska
+        td
+          img(src="/img/flags/pl.png")
+          img(src="/img/flags/fr.png")
+          img(src="/img/flags/de.png")
+      tr
+        td Pomnik Powstania Warszawskiego
+        td 2216 m.
+        td Plac Krasińskich, Warszawa, Polska
+        td
+          img(src="/img/flags/pl.png")
+          img(src="/img/flags/en.png")
+          img(src="/img/flags/es.png")
+          img(src="/img/flags/fr.png")
+          img(src="/img/flags/de.png")
+      tr
+        td Dawna stacja kolejowa
+        td 15573 m.
+        td Patriotów 44a, Warszawa, Polska	
+        td
+          img(src="/img/flags/pl.png")
+          img(src="/img/flags/en.png")
+          img(src="/img/flags/es.png")
+      tr
+        td Brama Główna Uniwersytetu...
+        td 1169 m.
+        td Krakowskie Przedmieście 26/28 , Warszawa, Polska
+        td
+          img(src="/img/flags/pl.png")
+          img(src="/img/flags/de.png")
+      tr
+        td Palma
+        td 628 m.
+        td Rondo de Gaulle'a , Warszawa, Polska
+        td
+          img(src="/img/flags/pl.png")
+          img(src="/img/flags/en.png")
+          img(src="/img/flags/fr.png")
+      tr
+        td Tablica pamiątkowa
+        td 50 m.
+        td Aleje Jerozolimskie, Warszawa, Polska    
+        td
+          img(src="/img/flags/pl.png")
+          img(src="/img/flags/en.png")
+          
+script(type="text/javascript").
+  GHAppLang = 'pl';
+  var myMethod = function(){
+    GHApp.browseBodyOnLoad();
+  };
+  if(document.loaded) {
+    myMethod();
+  } else {
+    if (window.addEventListener) {
+      window.addEventListener('load', myMethod, false);
+    } else {
+      window.attachEvent('onload', myMethod);
+    }
+  }

@@ -1,6 +1,22 @@
 doctype
 html
   head
+    title GeoHermes Demo
     link(rel="stylesheet" href="/main.css")
+    link(rel="shortcut icon" href="/img/sygnet-alpha.png")
+    link(rel="stylesheet" href="/css/pure-min.css")
+    link(rel="stylesheet" href="/css/purecss/grids-responsive-min.css")
+    script(type="text/javascript" src="/js/leaflet/leaflet.js")
+    link(rel="stylesheet" href="/js/leaflet/leaflet.css")
+    link(rel="stylesheet" href="/js/leaflet.marker-cluster/MarkerCluster.css")
+    link(rel="stylesheet" href="/js/leaflet.marker-cluster/MarkerCluster.Default.css")
+    script(src="/js/leaflet.marker-cluster/leaflet.markercluster-src.js")
+    link(href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet")
+    link(rel="stylesheet" href="/css/easy-button.css")
+    script(src="/js/easy-button.js")
+    script(src="/js/main.js")
   body
+    include partials/header
     != yield
+    include partials/footer
+    

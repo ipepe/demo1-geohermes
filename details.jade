@@ -1,0 +1,36 @@
+.pure-g
+  .pure-u-md-2-3.pure-u-1
+    .pure-u-md-2-3.pure-u-1.content-with-padding
+      h1 Pałac Jabłonowskich
+      h3 Senatorska 14/16, Warszawa, Polska
+    .pure-u-md-1-3.pure-u-1.content-with-padding
+      h3.btn.btn-primary Opowiedz historię
+    iframe(width='100%' height='650' frameborder='0' src="http://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1mauov2AZdvLs_5XQHq4ic8NS-eT6CuqlS-B1GyXz2Hg&font=Default&lang=pl&initial_zoom=1&height=650")
+  .pure-u-md-1-3.pure-u-1.content-with-padding(style=" height: 100vh")
+    #LeafletMapDiv(style="height: 30vh; width: 100%; margin-bottom: 10px")
+    b Senatorska 14/16, Warszawa, Polska
+    p Pałac Jabłonowskich – pałac w Warszawie, zlokalizowany w Śródmieściu przy placu Teatralnym pod adresem ul. Senatorska 14/16, wzniesiony w XVIII wieku, zniszczony w czasie II wojny światowej, zrekonstruowany według projektu Lecha Klajnerta w 1997.
+    table.pure-table.pure-table-horizontal(style="width: 100%;")
+      tr
+        td.fa.fa-camera-retro(style="height: 40px;")
+        td(style="height: 40px; width: 100%") 16 Zdjęć
+      tr
+        td.fa.fa-comment(style="height: 40px;")
+        td(style="height: 40px; width: 100%") 1 Video
+      tr
+        td.fa.fa-clock-o(style="height: 40px;")
+        td(style="height: 40px; width: 100%") 11 Wydarzeń
+script(type="text/javascript").
+  GHAppLang = 'pl';
+  var myMethod = function(){
+    GHApp.detailsBodyOnLoad();
+  };
+  if(document.loaded) {
+    myMethod();
+  } else {
+    if (window.addEventListener) {
+      window.addEventListener('load', myMethod, false);
+    } else {
+      window.attachEvent('onload', myMethod);
+    }
+  }
