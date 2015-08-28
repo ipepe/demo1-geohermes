@@ -1,0 +1,19 @@
+{
+  "name": "demo1-geohermes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipepe/demo1-geohermes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ipepe/demo1-geohermes/issues"
+  },
+  "homepage": "https://github.com/ipepe/demo1-geohermes#readme"
+}
